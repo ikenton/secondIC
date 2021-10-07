@@ -4,9 +4,9 @@
 static PtrToEmployee searchEmployeeTable(PtrToConstEmployee ptr, int tableSize, const void *targetPtr, int (*functionPtr)(const void *, PtrToConstEmployee)){
     PtrToConstEmployee endPtr = ptr + tableSize;
 
-    for(; ptr < endPtr; ptr){
-        if((*functionPtr)(targetPtr, ptr) ==0)
-            return (PtrToEmployee)ptr;
+    for(; ptr < endPtr; ptr++){
+        if((*functionPtr)(targetPtr, ptr) == 0)
+            return (PtrToEmployee) ptr;
     }
     return NULL;
 }
@@ -41,6 +41,6 @@ PtrToEmployee searchEmployeeByPhone(PtrToConstEmployee ptr, int size, char* phon
     return searchEmployeeTable(ptr, size, phone, compareEmployeePhone);
 }
 
-PtrToEmployee searchEmployeeBySalary(PtrToConstEmployee ptr, int size, long salary){
+PtrToEmployee searchEmployeeBySalary(PtrToConstEmployee ptr, int size, double salary){
     return searchEmployeeTable(ptr, size, &salary, compareEmployeeSalary);
 }
