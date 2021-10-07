@@ -14,8 +14,8 @@ Employee EmployeeTable[] =
 
 };
 
-const int EmployeeTableEntrie = sizeof(EmployeeTable)/sizeof(EmployeeTable[0]);
-
+const int EmployeeTableEntries = sizeof(EmployeeTable)/sizeof(EmployeeTable[0]);
+/*
 void main(){
     printf("%ld\n",sizeof(EmployeeTable));
     printf("%ld\n",sizeof(EmployeeTable[0]));
@@ -24,4 +24,4 @@ void main(){
     printf("%ld\n",sizeof(char*));
     printf("%ld\n",sizeof(double));
 
-}
+}*/

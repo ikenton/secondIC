@@ -13,10 +13,10 @@ int main(void){
     extern const int EmployeeTableEntries;
 
     PtrToEmployee matchPtr;
-    matchPtr = searchEmployeeByNumber(EmployeeTable, EmployeeTableEntries, 1045);
+    matchPtr = searchEmployeeByNumber(EmployeeTable, EmployeeTableEntries, 1001l);
 
     if(matchPtr != NULL){
-        printf("Employee ID 1045 is in record %ld\n", matchPtr - EmployeeTable);
+        printf("Employee ID 1001 is in record %ld\n", matchPtr - EmployeeTable);
     }
     else{
         printf("Employee ID is NOT found in the record\n");
